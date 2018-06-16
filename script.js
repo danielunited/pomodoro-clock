@@ -113,14 +113,14 @@ $(document).ready(function() {
       $("#work-num").hide();
       $("#break-display").show();
       breakNum = increment(breakNum);
-      $("#break-num").html("break #" + breakNum);
+      $("#break-num").html("הפסקה #" + breakNum);
       $("#break-num").show();
       $("#pause").hide();
       $("#reset").hide();
       $("#start").show();
       state = "break";
       if (breakNum%4===0) {
-        $("#break-num").html("extended break");
+        $("#break-num").html("הפסקה ארוכה");
         $("#break-time-display").html(extBreakTime + ":00");
       }
       else {
@@ -145,7 +145,7 @@ $(document).ready(function() {
       $("#break-num").hide();
       $("#work-display").show();
       pomNum = increment(pomNum);
-      $("#work-num").html("pomodoro #" + pomNum);
+      $("#work-num").html("פומודורו #" + pomNum);
       $("#work-num").show();
       $("#pause").hide();
       $("#reset").hide();
@@ -199,7 +199,7 @@ $(document).ready(function() {
     $("#break-num").hide();
     $("#work-display").show();
     pomNum = 1;
-    $("#work-num").html("pomodoro #" + pomNum);
+    $("#work-num").html("פומודורו #" + pomNum);
     $("#work-num").show();
     $("#pause").hide();
     $("#resume").hide();
